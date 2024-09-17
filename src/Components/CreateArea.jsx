@@ -4,13 +4,13 @@ function CreateArea(props) {
   const [title, setTitle] = useState("");
   const [notedes, setNoteDes] = useState("");
 
-  function titleValue() {
+  function titleValue(event) {
     const newValue = event.target.value;
     setTitle(newValue);
     console.log(title);
   }
 
-  function noteValue() {
+  function noteValue(event) {
     const newValue = event.target.value;
     setNoteDes(newValue);
     console.log(notedes);
